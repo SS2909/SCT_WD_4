@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background: #ffffffcc;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+  flex: 1 1 auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #1c92d2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d6efd;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.task-info.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li button {
+  margin-left: 5px;
+  background-color: #ff5c5c;
+}
+
+li button.edit {
+  background-color: #ffc107;
+}
+
+li button.complete {
+  background-color: #28a745;
+}
+
+li button:hover {
+  opacity: 0.9;
+}
